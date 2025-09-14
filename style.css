@@ -6,7 +6,8 @@ html {
 body{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Ramabhadra", sans-serif;
+    font-weight: 100;
     line-height: 1.5;
     font-size: 18px;
     background-color: #9A8478;
@@ -17,43 +18,32 @@ ul{
     padding: 0px;
 }
 a{
-    text-decoration: none;
-    
+    text-decoration: #42275A;
 }
 /*Heading*/
 
-header{
+.header{
     background-color: #1E130C ;
     color: #fff;
     border-bottom: #42275A solid 5px;
-    padding-bottom : 10px;
 }
 
 .heading_main{
-    display: inline-block; /*this is used to align nav and heading in a line*/
-    margin-left: 10%; 
-    padding-top: 7px;
-    vertical-align: middle; /*this too is used to align nav and heading in a line*/
+    display: inline-block;
+    width: 55%;
+    margin-left: 10%;
 }
 
 nav{ 
-    word-spacing: 40px;
-    padding-top:10px;
-    margin: 40px 0px 0px 0px;
-    margin-right: 11%; 
-    float: right;
-}
-
-nav li{
-    list-style: none;
-    display: inline; 
+    display: inline-block;
+    word-spacing: 60px;
+    margin-left: 20px;
 }
 
 nav a{
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
-    
+    font-weight: bold; 
 }
 
 #container1{
@@ -67,7 +57,7 @@ nav a{
 
 #container1 h2{
     margin: 0px;
-    padding-top: 20px;
+    padding: 20px;
     text-align:center;
 }
 
@@ -93,7 +83,7 @@ nav a{
     color: #fff;
     background-color: #04227e;
     text-decoration: none;
-    padding: 10px;
+    padding: 3px 8px;
     border-radius: 10px;
 }
 
@@ -111,6 +101,14 @@ nav a{
 
 .role img{
     border-radius: 15px;
+
+}
+
+.role a{
+    background-color: #1E130C;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
 }
 
 footer{
@@ -129,16 +127,37 @@ footer p{
 
 /* Hiring pg*/
 
+.page-left ul{
+    list-style: none;
+}
+
 .page-left {
-    float: left;
-    margin-bottom: 550px;
-    margin-right: 50px;
-    margin-top:50px;
-    margin-left: 150px;
+    display: inline-block;
+    width: 18%;
+    background-color: white;
+    border: 5px solid #42275A ;
+    margin-left: 10%;
+    padding: 10px;
 }
 
 .page-right{
-    margin-right: 5%; 
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 5%;
+}
+
+.page-right .profileOfDevs{
+    text-decoration: none;
+    color: #1E130C;
+    background-color: #04227e;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.user h3{
+    display: inline-block;
 }
 
 .user{
@@ -147,4 +166,15 @@ footer p{
     border: #42275A solid 5px;
     border-radius: 10px;
     margin-left: 400px;
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+ 
+
+@media(max-width:600px){
+    #main{
+        width: 100%;
+        float:none;
+    }
 }
